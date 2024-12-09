@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scale-75 {
+  transform: scale(0.75);
+}
+
+.scale-100 {
+  transform: scale(1);
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.transition-transform {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
