@@ -2,9 +2,9 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="bg-gray-800 fixed w-full z-10 top-0 shadow-lg">
+    <nav className="bg-gray-800 fixed w-full z-10 top-0 shadow-lg pt-2 pb-2">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="https://www.lucidtravel.com">
@@ -46,7 +46,7 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex md:space-x-8 items-center">
             <div className="relative group">
-              <button className="text-white font-semibold hover:text-blue-400">
+              <button className="text-white text-xl font-semibold hover:text-blue-400">
                 Products <i className="fa fa-caret-down"></i>
               </button>
               <div className="absolute hidden group-hover:block bg-gray-700 shadow-lg rounded mt-2 min-w-[200px]">
@@ -85,25 +85,25 @@ const Navbar = () => {
 
             <a
               href="https://www.lucidtravel.com/how-it-works"
-              className="text-white hover:text-blue-400"
+              className="text-white hover:text-blue-400 text-xl"
             >
               How It Works
             </a>
             <a
               href="https://www.lucidtravel.com/media"
-              className="text-white hover:text-blue-400"
+              className="text-white hover:text-blue-400 text-xl"
             >
               Media
             </a>
             <a
               href="https://www.lucidtravel.com/user/registration-step-1"
-              className="bg-blue-500 text-white px-4 py-2 rounded shadow hover:bg-blue-600"
+              className="bg-blue-500 text-white px-4 py-2 rounded shadow hover:bg-blue-600 text-xl"
             >
               Design Your Page
             </a>
             <a
               href="https://www.lucidtravel.com/user/login"
-              className="bg-gray-700 text-white px-4 py-2 rounded shadow hover:bg-gray-600"
+              className="bg-gray-700 text-white px-4 py-2 rounded shadow hover:bg-gray-600 text-xl"
             >
               Login
             </a>
