@@ -2,22 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-.scale-75 {
-  transform: scale(0.75);
+#home_wrapper {
+  background: linear-gradient(135deg, #83ABF7 0, #6BB0F2 60%, #52b6ec 100%);
+  min-height: 100vh;
 }
 
-.scale-100 {
-  transform: scale(1);
+.txt-type {
+  border-right: 0.2rem solid #777;
+  animation: blink 0.75s infinite;
 }
 
-.opacity-0 {
-  opacity: 0;
+@keyframes blink {
+  from { border-color: transparent }
+  to { border-color: #777 }
 }
 
-.opacity-100 {
-  opacity: 1;
+/* Adjust animation speed globally for all WOW.js animations */
+.wow {
+  animation-duration: 1.5s !important;  /* Change this value to make it slower */
+  animation-delay: 0.5s !important;    /* Optional: delay the animation */
 }
 
-.transition-transform {
-  transition: transform 0.5s ease, opacity 0.5s ease;
+/* Example for a specific animation */
+.wow.slideInUp {
+  animation-duration: 2s !important;  /* Slower slideInUp animation */
+  animation-delay: 0.5s !important;  /* Optional delay */
 }
